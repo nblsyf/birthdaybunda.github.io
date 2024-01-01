@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="pict/logo5.jpg" width>
+    <title>HBD</title>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+        body{
+            background-image: url("https://images.pexels.com/photos/9665193/pexels-photo-9665193.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 700px;
+            position: relative;
+            margin-top: 30px;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            margin-top: -22px;
+            padding: 16px;
+            color: rgb(255, 209, 219);
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s ease;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 10px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            color: white;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+            border-radius: 10px;
+
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+
+        html {
+            font-family: "Open Sans", sans-serif;
+        }
+
+        h1 {
+            color: #444;
+        }
+
+        .btn {
+            padding: 1em 2.1em 1.1em;
+            border-radius: 3px;
+            margin: 8px 8px 8px 8px;
+            margin-top: 60px;
+            color: palevioletred;
+            background-color: #fbdedb;
+            display: inline-block;
+            background: #e74c3c;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+            font-family: sans-serif;
+            font-weight: 800;
+            font-size: .85em;
+            text-transform: uppercase;
+            text-align: center;
+            text-decoration: none;
+            -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+            position: relative;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            opacity: 0.8;
+        }
+
+        .btn:active {
+            -webkit-transform: scale(0.80);
+            -moz-transform: scale(0.80);
+            -ms-transform: scale(0.80);
+            -o-transform: scale(0.80);
+            transform: scale(0.80);
+        }
+
+        .btn.block {
+            display: block !important;
+        }
+
+        .btn.circular {
+            border-radius: 50em !important;
+        }
+
+        .pink {
+            background-color: #ffcbe5;
+        }
+
+        .section2 {
+            font-size: 4vw;
+            margin-top: 10px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: white;
+            font-size: 5vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="pict/1.png"
+                style="width:80%;box-shadow: 0px 1px 5px  rgb(148, 148, 148); border-radius: 10px; margin: 39px; ">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pict/2.png"
+                style="width:80%;box-shadow: 0px 1px 5px  rgb(148, 148, 148); border-radius: 10px;margin: 39px; ">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pict/3.png"
+                style="width:80%;box-shadow: 0px 1px 5px  rgb(148, 148, 148); border-radius: 10px;margin: 39px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pict/4.png"
+                style="width:80%;box-shadow: 0px 1px 5px  rgb(148, 148, 148); border-radius: 10px;margin: 39px;">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div class="section2">
+        <img src="">
+        <center>
+            <p>On This Special Day</p>
+        </center>
+    </div>
+
+    <center>
+        <span style="font-size: 10vw; font-weight: bold; color: rgb(255, 188, 220); ">02</span>
+        <span style=" margin: 80px; font-size: 10vw; font-weight: bold; color: rgb(223, 255, 168); ">01</span>
+        <span style="font-size: 10vw; font-weight: bold; color: rgb(171, 188, 255); ">24</span>
+    </center>
+
+    <center>
+        <span style="font-size: 3vw;  color: gray; ">date</span>
+        <span style=" margin: 97px; font-size: 3vw;  color: gray">month</span>
+        <span style="font-size: 3vw;  color: grey;">year</span>
+    </center>
+
+    <center><a href="dashboard.html" class="btn pink circular">klik</a></center>
+
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
